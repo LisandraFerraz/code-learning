@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    display: block;
+    background-color: rgba(189, 189, 189, 0.8);
+    border-radius: 20px;
+    border: 3px solid transparent; 
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(221, 221, 221, 0.5);
+    border-radius: 20px;
+}
+
+ul{
+    margin-top: 3vh;
+}
+
+ul li {
+    font-family: 'Poppins', 'Verdana', 'Times New Roman', Times, serif;
+}
+
+nav{
+    position: fixed;
+    background-image: linear-gradient(to left, rgba(169, 210, 233, 0.8), rgba(139, 192, 223, 0.8), rgba(183, 210, 226, 0.8)); position:sticky;
+    background-color: #a4eefc;
+    width: 98%;
+    height: 11.5vh;
+    float: left;
+    list-style: none;
+    float: left;
+    padding: 1%;
+    font-size: 2.4vh;
+}
+
+nav li{
+    list-style: none;
+    position: relative;
+    float: left;
+    top: 0.2vh;
+    border-right: 1px solid transparent;
+    padding-left: 3vh;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* tamanho da logo */
+.imgLogo{
+    margin-right: 2vh;
+    margin-top: 1vh;
+    height: 10vh;
+}
+
+.imgLupa{
+    border-radius: 3px;
+    background-color: #e9ecef;
+    position: relative;
+    float: right;
+    height: 5.1vh;
+    top: -5.2vh;
+    right: -24.2vh;
+    border-left: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+.caixa-pesquisa{
+    border-left: 1px solid rgba(26, 26, 26, 0.1);
+    position: relative;
+    width: 10vh; 
+    display: block;
+    margin: 0 auto;
+    margin-right: 25vh;
+}
+
+input.barra-pesquisa{
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 28vh;
+    height: 5vh;
+    padding: 0 2vh;
+    font-size: 2vh;
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+}
+
+.ajuda-li{
+    float: right;
+}
+
+.ajuda-li li{
+    margin-right: 5vh;
+}
+
+.ajuda-li  li ul {
+    box-shadow: 1px 1px 20px rgba(0,0,0, 0.1);
+    position: absolute;
+    display: none;
+    list-style: none;
+    padding: 1%;
+    height: 13vh;
+    top: 0.5vh;
+    left: -50px;
+    background-color: rgba(169, 210, 233, 0.9);
+}
+
+.ajuda-li li ul li {
+    border: 1px solid transparent;
+    display: block;
+    width: auto;
+}
+
+.ajuda-li li:hover ul, .ajuda-li li.over ul {
+    display: block;
+}
+

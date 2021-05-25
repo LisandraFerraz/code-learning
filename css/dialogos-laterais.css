@@ -1,0 +1,115 @@
+.mensagens-jogo{
+    width: max-content;
+    margin-left: 10vh;
+}
+
+/* primeiro balão */
+#balao-1{
+    box-shadow: -3px 3px 2px rgba(0, 0, 0, 0.8);
+    height: auto;
+    width: 60vh;
+    margin-top: 3vh;
+}
+
+/* 2 ao 5 balao */
+#balao-2,#balao-3,#balao-4,#balao-5,#balao-6,#balao-7,
+#balao-8,#balao-9,#balao-10,#balao-11,#balao-12{
+    box-shadow: -3px 3px 2px rgba(0, 0, 0, 0.8);
+    height: auto;
+    width: 60vh;
+    margin-top: 3vh;
+    display:none;
+}
+
+.btn-balao{
+    height: 4vh;
+    width: 15vh;
+    padding: 1%;
+    border-radius: 4px;
+    border: 1px solid rgba(58, 58, 58, 0.2);
+
+    background-color: seashell;
+    font-size: 1.7vh;
+    display:block;
+    margin-left: 70%;
+    margin-top: 3%;
+}
+
+.btn-balao:hover{
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-balao{
+    color: rgb(226, 226, 226);
+    font-size: 2.4vh;
+}
+
+.txt-balao{
+    text-align: justify;
+    font-size: 2.4vh;
+    color: rgb(236, 236, 236);
+}
+
+.balao-dialogo-missao{
+    color: rgb(255, 255, 255);
+	background: #ed5565;
+    
+    padding: 5%;
+	position: relative;
+	border-radius: .4em;
+    margin-left: 25px;
+}
+
+.balao-dialogo-missao a {
+    text-decoration: none;
+}
+
+/* estilização balao */
+.balao-dialogo {
+    padding: 5%;
+
+	position: relative;
+	background-color: #c25105;
+	border-radius: .4em;
+    margin-left: 25px;
+}
+
+/* estilização balao */
+.balao-dialogo:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-right-color: #c25105;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -17.5px;
+	margin-left: -35px;
+}
+
+.balao-dialogo-npc{
+    padding: 5%;
+
+	position: relative;
+	background: #8569c7;
+	border-radius: .4em;
+    margin-left: 80px;
+}
+
+.balao-dialogo-npc:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: #8569c7;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-right: -20px;
+}
